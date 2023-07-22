@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./margot-robbie-barbie-3041260.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.738)); /* URL de la imagen de fondo proporcionada y fondo rosa semitransparente */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  /* SOMBRAS BLANCAS*/
+  text-shadow: 2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, 0 2px 0 #ffffff, 2px 0 0 #ffffff, 0 -2px 0 #ffffff, -2px 0 0 #ffffff, 2px 2px 5px #ffffff;
+}
+
+.header-image {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.header-title {
+  color: #ff80bf; /* Rosa brillante */
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.invitation-message {
+  text-align: center;
+}
+
+.event-details {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.movie-info {
+  text-align: center;
+}
+
+.confirmation-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.confirmation-form label {
+  margin-top: 10px;
+}
+
+.confirmation-form input, .confirmation-form textarea {
+  padding: 5px;
+  border: 1px solid #ff80bf; /* Rosa brillante */
+}
+
+.confirmation-form button {
+  background-color: #ff80bf; /* Rosa brillante */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.heart-decoration {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.heart-icon {
+  font-size: 40px;
+  color: #ff80bf; /* Rosa brillante */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* Estilos adicionales para centrar el contenido del main */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+/* Estilos adicionales para centrar el contenido del main */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos para la animación del carrito */
+.animation-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.carrito {
+  position: absolute;
+  bottom: 0;
+  left: -100px; /* Posición inicial del carrito fuera de la pantalla */
+  animation: moveCarrito 10s linear infinite; /* Animación para mover el carrito */
+}
+
+/* Animación para mover el carrito */
+@keyframes moveCarrito {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: calc(100% + 100px); /* Posición final del carrito fuera de la pantalla */
+  }
+}
+
+/* Estilos para la vista regresiva */
+#countdown {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+#countdown h2 {
+  font-size: 28px;
+}
+
+#countdown p {
+  margin-top: 10px;
+}
+
+
+/* Estilos para los inputs y textareas */
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ffffff; /* Rosa brillante */
+}
+
+.input-container input,
+.input-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ff80bf; /* Rosa brillante */
+  border-radius: 5px;
+}
+
+.input-container textarea {
+  resize: vertical;
+}
